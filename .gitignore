@@ -1,0 +1,10 @@
+_obj/
+*.dSYM/
+rule_test
+*.o
+*.a
+GPATH
+GRTAGS
+GTAGS
+*~
+.DS_Store
