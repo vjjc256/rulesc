@@ -13,8 +13,8 @@ tests is not. **rulesc** solves this problem by using cgo to apply the unit
 tests written in Go to the underlying C implementation.
 
 ## rulesc is a git submodule used in both the [rules](https://github.com/currantlabs/rules) and [new-day](https://github.com/currantlabs/new-day) repos
-**rulesc** contains the C implementation of the rules used to build the
-**new-day** executable. These shared C source files are used to build a
+**rulesc** contains the C implementation of the rules which are compiled into the
+**new-day** executable. Within the **rulesc**  directory, these shared C source files are used to build a
 library, **librules.a**, and cgo is used to call into the C implementation
 of rules from within wrapper functions that **rulesc** then exports to our
 **rules** Go package. For ease of sharing the C sources with the
